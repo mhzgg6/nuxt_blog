@@ -14,6 +14,10 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    {
+      src: './assets/styles/app.scss',
+      lang: 'scss'
+    }
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)

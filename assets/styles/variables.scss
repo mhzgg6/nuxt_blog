@@ -1,0 +1,11 @@
+@import "./theme";
+
+body {
+  &.default {
+    @include defaultTheme();
+  }
+
+  &.dark {
+    @include darkTheme();
+  }
+}
