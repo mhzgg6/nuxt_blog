@@ -1,0 +1,29 @@
+:root, html {
+  box-sizing: border-box;
+  cursor: default;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: inherit;
+  line-height: inherit;
+  background-repeat: no-repeat;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}

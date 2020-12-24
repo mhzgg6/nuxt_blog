@@ -1,14 +1,11 @@
-import Vue from "vue"
-import Vuex from "vuex"
-import getters from "./getter"
-
-Vue.use(Vuex)
-
-const store = new Vuex.Store({
-  modules: {
-
-  },
-  getters
+export const state = () => ({
+  theme: 'default'
 })
 
-export default store
+export const mutations = {
+  setTheme (state, theme) {
+    document.body.id = theme
+    window.localStorage.setItem('THEME', theme)
+    state.theme = theme
+  }
+}
